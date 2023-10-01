@@ -45,7 +45,7 @@ const createShape = (response) => {
         newShape = new Square(iconColor)
     }
 
-    return(newShape)
+    return(newShape.svgText)
 }
 
 const createText = (response) => {
