@@ -55,7 +55,7 @@ const createText = (response) => {
     const iconText = response.iconText
     const textColor = response.textColor
 
-    const newText = `<text x="150" y="125" font-size="50" text-anchor="middle" fill=${textColor}>${iconText}</text>`
+    const newText = `<text x="150" y="125" font-size="50" text-anchor="middle" fill='${textColor}'>${iconText}</text>`
     return(newText)
 }
 
