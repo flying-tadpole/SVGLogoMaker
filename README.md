@@ -12,7 +12,7 @@ To use, run program with command 'node index.js' from terminal.
 ![Command line display](./assets/commandLineDisplay.png)
 ![Passing Tests](./assets/passingTests.png)
 
-![Video Walkthrough](https://www.youtube.com/watch?v=VLO1vbPrxro)
+[Video Walkthrough](https://www.youtube.com/watch?v=VLO1vbPrxro)
 
 ## Contributing
 Code snippets provided as a part of bootcamp program. Extensive use of inquirer and jest documentation.
