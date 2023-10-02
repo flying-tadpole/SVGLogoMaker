@@ -3,6 +3,7 @@ const fs = require('fs');
 const jest = require('jest')
 const {Circle, Triangle, Square} = require("./lib/shapes")
 
+// questions for userinput
 const userOptions = [
     {
         type: "input",
@@ -32,6 +33,7 @@ const userOptions = [
     },
 ]
 
+// takes user input and creates shapes
 const createShape = (response) => {
     const iconShape = response.iconShape
     const iconColor = response.shapeColor
@@ -48,6 +50,7 @@ const createShape = (response) => {
     return(newShape.svgText)
 }
 
+// takes user input and creates text
 const createText = (response) => {
     const iconText = response.iconText
     const textColor = response.textColor
@@ -56,6 +59,7 @@ const createText = (response) => {
     return(newText)
 }
 
+// takes shape and text and combines into SVG format
 const writeToSvg = (generatedShape, generatedText) =>
 `<svg 
     width="300" height="200"
@@ -64,18 +68,16 @@ ${generatedShape}
 ${generatedText}
 </svg>`
 
+//runs on start, gathers user input, calls creation functions, and writes file
 function init() {
     inquirer
     .prompt(userOptions)
     .then ((response) => {
-        console.log('response:',response)
         const generatedShape = createShape(response)
-        console.log("gen shape:", generatedShape)
         const generatedText = createText(response)
-        console.log('gen text', generatedText)
         const svgFileContent = writeToSvg(generatedShape, generatedText)
 
-        fs.writeFile("logo.svg", svgFileContent,
+        fs.writeFile("./examples/logo.svg", svgFileContent,
             (err) =>
             err ? console.log(err) : console.log("Generated logo.svg"))
     })
