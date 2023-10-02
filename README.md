@@ -10,7 +10,6 @@ Inquirer, Jest, and FS are required to run this tool.
 To use, run program with command 'node index.js' from terminal.
 
 ![Command line display](./assets/commandLineDisplay.png)
-![Example Logo](./examples/logo.svg)
 ![Passing Tests](./assets/passingTests.png)
 
 ![Video Walkthrough](https://www.youtube.com/watch?v=VLO1vbPrxro)
