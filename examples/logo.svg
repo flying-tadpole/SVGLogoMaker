@@ -1,6 +1,6 @@
 <svg 
     width="300" height="200"
     xmlns="http://www.w3.org/2000/svg">
-<rect x='75' y='37' width='150' height='150' fill='Black'></rect>
+<circle cx='150' cy='112' r='80' fill='Black'></circle>
 <text x="150" y="125" font-size="50" text-anchor="middle" fill=Yellow>AWC</text>
 </svg>
